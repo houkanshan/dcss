@@ -32,7 +32,7 @@ function json2css(json){
         for(var j in json[i]){
             styleStr += j + ':' + json[i][j] + ';';
         }
-        styleStr += "}";
+        styleStr += "} \n";
     }
     return styleStr;
 }
@@ -142,6 +142,7 @@ function render(){
     //TODO: test use innerHTML directly, see if will cause flash
     styleElem.innerHTML = json2css(this.cssInJson);
     this.headElem.appendChild(styleElem);
+    console.log('rended');
 
     var _this = this;
     setTimeout(function(){

@@ -21,7 +21,7 @@
 </head>
 <body>
     <div>
-        resize the window
+        resize the window ( 这个例子在窗口缩小的时候会有抖动，是因为先resize,再render style，周围没有留足空间缓冲，只是例子本身的问题 )
     </div>
     <div class="box"></div>
     <div class="box even"></div>
@@ -140,7 +140,7 @@
     <div class="box"></div>
     <div class="box even"></div>
 
-    <script src="./dycss.js" type="text/javascript"></script>
+    <script src="./dcss.js" type="text/javascript"></script>
     <script type="text/javascript">
         var oneLineNum = 10;
         var resizeTimer;
