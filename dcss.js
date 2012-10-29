@@ -163,6 +163,11 @@ Dcss = {
     json2css: json2css
 };
 
+// add AMD support
+if (typeof window.define === "function" && window.define.amd) {
+	window.define([], function () { return Dcss; } );
+}
+
 exports.Dcss = Dcss;
 
 }(window));
